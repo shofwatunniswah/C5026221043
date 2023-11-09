@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lift Up Your Mood with Douxbutter</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="asset/douxbutter.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styleETS.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@100;300;500;600;700;800&family=Nerko+One&family=Nunito:wght@1000&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scriptETS.js"></script>
+</head>
+
+<body>
+    <div id="preloader">
+        <div class="wrapper">
+            <div class="typing-demo">
+                <h3 class="subtitle-dark" style="font-size: 100px;">Welcoming Sweetooth!</h3>
+            </div>
+        </div>
+    </div>
+    <script>
+        setTimeout(function () {
+            // Get the preloader element
+            var preloader = document.getElementById('preloader');
+
+            // Check if the preloader element exists
+            if (preloader) {
+                // Hide the preloader by changing its style
+                preloader.style.display = 'none';
+            }
+        }, 3000);
+    </script>
+    <div id="web" class="container-fluid pl-0 pr-0">
+        <nav id="navbar" class="row navbar navbar-expand-lg fixed-top nav pl-0 pr-0"
+            style="background-color: rgb(242,237,228);">
+            <div class=" container pl-0 pr-0">
+            <!--icon-->
+            <div>
+                <img class="icon" src="asset/douxbutter.png">
+            </div>
+            <!--navbar-->
+            <nav class="navbar navbar-expand-sm justify-content-end pl-0 pr-0">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-navbar" href="#overview">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-navbar" href="#OurProducts">Our Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-navbar" href="#OfflineStore">Offline Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-navbar" href="#testimonial">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-navbar" href="#orderForms">Order Form</a>
+                    </li>
+                </ul>
+            </nav>
+    </div>
+    </nav>
+    <br><br><br>
+    </div>
+    <div id="overview" class="container-fluid pl-0 pr-0">
+        <div class="row shofie-backgLight">
+            <div class=" col-6">
+                <img src="asset/overview.png" style="margin-left: 100px;">
+            </div>
+            <div class="col-6 pl-3">
+                <h3 class="subtitle-dark" style="text-align: left; padding-top: 70px;">Welcoming Sweetooth!</h3>
+                <p class="mt-3" style="margin-right: 50px;">Indulge in the enchanting world of Korean-inspired bakery
+                    and sweet delights. At Douxbutter, we're all about blending the timeless flavors of Korea with a
+                    touch of modern magic.
+                    From fluffy pastries to delightful cakes and global treats, we've got something for every sweet
+                    tooth.
+                    Sip on rich coffee as you savor your favorite treats in our cozy ambiance. We're more than a bakery;
+                    we're a slice of sweet heaven with a hint of Korean charm.
+                    Join us on a journey into the heart of sweet traditions</p>
+                <h3 class="subtitle-dark" style="text-align: left; margin-bottom: 50px;"> it's time to treat yourself
+                </h3>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid pl-0 pr-0"></div>
+    <div id="home" class="carousel slide pl-0 pr-0" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#home" data-slide-to="0" class="active"></li>
+            <li data-target="#home" data-slide-to="1"></li>
+            <li data-target="#home" data-slide-to="2"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="pic-carousel" src="asset/birthday.jpg" alt="Birthday">
+                <div class="carousel-caption">
+                    <h3>
+                        Celebrate your Moments!
+                    </h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="pic-carousel " src="asset/hampers.jpg" alt="hampers">
+                <div class="carousel-caption">
+                    <h3>
+                        Share it with your loved ones
+                    </h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="pic-carousel" src="asset/christmas.jpg" alt="Christmas">
+                <div class="carousel-caption">
+                    <h3>
+                        Enjoy your Christmas with sweet delicates
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div>
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#home" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#home" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+    </div>
+    <!--Our Products-->
+    <div id="OurProducts" class="container-fluid pl-0 pr-0 shofie-backgDark">
+        <br><br>
+        <div>
+            <h3 class="subtitle-light">Our Products</h3>
+        </div>
+        <div class="container-fluid my-5">
+            <div class="row">
+                <div class="col-12 m-auto">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item mb-4">
+                            <div class="card border-0 shadow">
+                                <img src="asset/doughnuts.jpg" alt="" class="card-img-top imgCard">
+                                <div class="card-body" style="height: 190px;">
+                                    <div class="card-title text-center">
+                                        <h4>Doughnuts</h4>
+                                        <p>Indulge in pure delight with our irresistible, freshly fried doughnuts that
+                                            will sweeten your day</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="card border-0 shadow">
+                                <img src="asset/Bagels.jpg" alt="" class="card-img-top imgCard">
+                                <div class="card-body" style="height: 190px;">
+                                    <div class="card-title text-center">
+                                        <h4>Bagels & Croissant</h4>
+                                        <p>Discover the ultimate breakfast bliss with our delectable bagels and
+                                            croissants, freshly baked for your delight</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card border-0 shadow">
+                                <img src="asset/Coffee.jpg" alt="" class="card-img-top imgCard">
+                                <div class="card-body" style="height: 190px;">
+                                    <div class="card-title text-center">
+                                        <h4>Coffee Series</h4>
+                                        <p>Elevate your coffee experience with our expertly roasted and brewed to
+                                            perfection, ensuring every sip is a journey</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card border-0 shadow">
+                                <img src="asset/KoreanBingsoo.jpg" alt="" class="card-img-top imgCard">
+                                <div class="card-body" style="height: 190px;">
+                                    <div class="card-title text-center">
+                                        <h4>Korean Bingsoo</h4>
+                                        <p>Experiencing the taste of Korea with our refreshing bingsoo, a sweet delight
+                                            for your sweetooth</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card border-0 shadow">
+                                <img src="asset/FreshBerries.jpg" alt="" class="card-img-top imgCard">
+                                <div class="card-body" style="height: 190px;">
+                                    <div class="card-title text-center">
+                                        <h4>Fresh Berries</h4>
+                                        <p>Revitalize your palate with our fresh berries, delicately balance and
+                                            rejuvenate your senses</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card border-0 shadow">
+                                <img src="asset/pocketDrinks.jpg" alt="" class="card-img-top imgCard">
+                                <div class="card-body" style="height: 190px;">
+                                    <div class="card-title text-center">
+                                        <h4>To Go Drinks</h4>
+                                        <p>Elevate your on-the-go experience with our convenient pocket-sized coffee, a
+                                            satisfying brew at your fingertips.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+            integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+            crossorigin="anonymous"></script>
+        <script>
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 15,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 4
+                    }
+                }
+            })
+        </script>
+        <div id="OfflineStore" class="container-fluid shofie-backgLight ornaments">
+            <div class="row">
+                <div class="col-6 pl-0">
+                    <div id="ofstore" class="carousel slide" data-ride="carousel">
+
+                        <!-- Indicators -->
+                        <ul class="carousel-indicators">
+                            <li data-target="#ofstore" data-slide-to="0" class="active"></li>
+                            <li data-target="#ofstore" data-slide-to="1"></li>
+                            <li data-target="#ofstore" data-slide-to="2"></li>
+                        </ul>
+
+                        <!-- The slideshow -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="asset/os1.jpg" height="600" class="center">
+                                <div class="carousel-caption">
+                                    <h4>Suitable place to satisfate your aesthetic feeds</h4>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="asset/os2.jpg" height="600" class="center">
+                                <div class="carousel-caption">
+                                    <h4>Spend your time with your loved ones</h4>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="asset/os3.jpg" height="600" class="center">
+                                <div class="carousel-caption">
+                                    <h4>Quiet space for yourself</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev" href="#ofstore" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#ofstore" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="col-5 pl-5">
+                    <div class="container-fluid pr-0">
+                        <h3 class="headline verticalAlign">We Guarantee You A Cozy Place</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="testimonial" class="container-fluid shofie-backgDark shofie-stars">
+            <br><br><br>
+            <h3 class="subtitle-light">They're Craving for Us!</h3>
+            <div id = "testimonials" class="carousel slide pl-0 pr-0 mt-5 center" data-ride="carousel" style="width: 90%;">
+
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#testimonials" data-slide-to="0" class="active"></li>
+                    <li data-target="#testimonials" data-slide-to="1"></li>
+                    <li data-target="#testimonials" data-slide-to="2"></li>
+                </ul>
+
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="center shofie-conCarousel shadow">
+                            <br>
+                            <img src="asset/testimonials1.jpeg" class="center shofie-profilePic">
+                            <br>
+                            <h3 style="text-align: center;">Olivia Johnson</h3>
+                            <br>
+                            <p class="ml-5 mr-5" style="text-align: center;"> Douxbutter has completely changed my
+                                dessert game. The
+                                combination of Korean and global flavors in their pastries and cakes is a true
+                                masterpiece. Each visit is a delightful adventure for my taste buds. The ambiance is
+                                warm and inviting, making it the perfect spot to unwind and enjoy some heavenly sweets.
+                                Whether I'm indulging in a classic or trying something new, Douxbutter never
+                                disappoints. It's my go-to place when I need a bit of sweetness in my life.</p>
+                            <br>
+                        </div>
+                        <br>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="center shofie-conCarousel shadow">
+                            <br>
+                            <img src="asset/testimonials2.jpg" class="center shofie-profilePic">
+                            <br>
+                            <h3 style="text-align: center;">Sophia Miller</h3>
+                            <br>
+                            <p class="ml-5 mr-5" style="text-align: center;">Douxbutter is a hidden gem in the world of
+                                sweet treats. As a
+                                devoted fan of Korean culture, their bakery has been a revelation. The Injeolmi and
+                                Dalgona-inspired desserts are not just delicious but also a nostalgic reminder of my
+                                visits to Korea. The cozy ambiance and friendly staff make every visit a delight, and
+                                their global range of sweets keeps me coming back for more. I highly recommend
+                                Douxbutter to anyone with a passion for extraordinary pastries and a taste for the
+                                extraordinary.</p>
+                            <br>
+                        </div>
+                        <br>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="center shofie-conCarousel shadow">
+                            <br>
+                            <img src="asset/testimonials3.jpg" class="center shofie-profilePic">
+                            <br>
+                            <h3 style="text-align: center;">Benjamin Parker</h3>
+                            <br>
+                            <p class="ml-5 mr-5" style="text-align: center;"> Douxbutter has quickly become my sanctuary
+                                for all things
+                                sweet. Their incredible range of Korean and international desserts never fails to
+                                impress. The care and dedication put into each pastry are evident in every bite. Whether
+                                it's a delightful cup of coffee paired with a red bean bun or a colorful macaron, I've
+                                never been disappointed. The friendly staff and warm atmosphere only add to the overall
+                                experience. Douxbutter is more than a bakery; it's a destination for anyone who
+                                appreciates the finer side of life.</p>
+                            <br>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+                <div>
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#testimonials" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#testimonials" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+            <br><br><br><br>
+        </div>
+
+        <!--Form Validations-->
+        <div id="orderForms" class="container-fluid shofie-backgLight">
+            <br><br><br>
+            <h3 class="subtitle-dark">Fill and Enjoy!</h3>
+            <div class="container-fluid center form-container">
+                <form name="myForm" action="https://wa.me/6285695781433 " style="width: 60%;"
+                    onsubmit="generateWhatsAppLink(); return false;" method="post" class="mt-5 center">
+
+                    <label for="name">Name</label>
+                    <input class="form-control" style="border: 0;" type="text" id="name" name="name"
+                        placeholder="Your name">
+                    <span id="errorName" class="errors"></span>
+
+                    <label for="phone">Phone</label>
+                    <input class="form-control" style="border: 0;" type="text" placeholder="Phone number" id="phone"
+                        name="phone">
+                    <span id="errorPhone" class="errors"></span>
+
+                    <label for="order"> Order :</label>
+                    <select class="form-control" style="border: 0;" style="border: 0;" id="orders" name="orders"
+                        required>
+                        <option value="" selected disabled hidden>What do you want for today</option>
+                        <option value="Doughnuts">Doughnuts</option>
+                        <option value="Bagels">Bagels</option>
+                        <option value="Croissant">Croissant</option>
+                        <option value="Coffee">Coffee</option>
+                        <option value="KoreanBingsoo">Korean Bingsoo</option>
+                        <option value="FreshBerries">Fresh Berries</option>
+                        <option value="PocketCoffee">Pocket Coffee</option>
+                        <option value="Custom">Specially Customized</option>
+                    </select>
+
+                    <label for="quantity">Quantity</label>
+                    <input class="form-control inputBox" style="border: 0;" type="text" placeholder="How many would you like?"
+                        id="quantity" name="quantity">
+                    <span id="errorQuantity" class="errors"></span>
+
+                    <label for="message">Custom Message</label>
+                    <textarea placeholder="What are you craving for?" cols="132" rows="5" name="subject"
+                        id="subject"></textarea>
+                    <span id="errorMessage" class="errors"></span>
+
+                    <label for="address">Address</label>
+                    <input class="form-control" style="border: 0;" type="text"
+                        placeholder="Where would you like it delivered?" id="address" name="address">
+                    <span id="errorAddress" class="errors"></span>
+                    <div class="row">
+                        <div class="col-6">
+                            <button class="buttonSubmit" type="submit" value="Submit">Submit</button>
+                        </div>
+                        <div class="col-6">
+                            <input class="buttonSubmit" type="reset" value="Reset" class="btn btn-warning">
+                        </div>
+
+                    </div>
+                </form>
+                <br><br><br>
+            </div>
+        </div>
+        <div class = "container-fluid shofie-backgDark text-center">
+            <br><br>
+            <h3 class="subtitle-light">My Assignments : </h3>
+            <br>
+            <nav style="align-self: cen;">
+                <a href="{{ url('/introduction-to-html') }}" target = "_blank" class="textLink" style="text-align: center;"> | Tugas 1 </a>
+                <a href="{{ url('/introduction-to-css') }}" target = "_blank" class="textLink" style="text-align: center;"> | Tugas 2 </a>
+                <a href="{{ url('/progress-bar')}}" target = "_blank" class="textLink" style="text-align: center;"> | Tugas 3 </a>
+                <a href="{{ url('/my-linktree')}}" target = "_blank" class="textLink" style="text-align: center;"> | Tugas 4 </a>
+                <a href="{{ url('/landing-page')}}" target = "_blank" class="textLink" style="text-align: center;"> | Tugas 5 </a>
+                <a href="{{ url('/validation-form')}}" target = "_blank" class="textLink" style="text-align: center;"> | Tugas 6 | </a>
+                <br><br>
+            </nav>
+        </div>
+        <div class="container-fluid" style="background-color: rgb(172, 163, 163);">
+            <br><br>
+            <div class="row">
+                <div class="col-3 pl-5">
+                    <p class="footerTitle">Come Visit Us!</p>
+                    <p class="mt-3">Come savor the sweetest moments at Douxbutter, where
+                        Korean-inspired delights await you at our cozy haven on :</p>
+                    <p>Jl. Raya Mulyosari No.119, Kalisari, Kec. Mulyorejo, Surabaya, Jawa Timur 60112</p>
+                </div>
+                <div class="col-3 pl-5">
+                    <div id="maps" class="mt-3">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.7796831055034!2d112.7960961!3d-7.2658953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fbb9dd356deb%3A0x59c1bd9699c07642!2sDoux%20Butter!5e0!3m2!1sen!2sid!4v1697780315952!5m2!1sen!2sid"
+                            class="mapbox" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="col-3 pl-5">
+                    <div>
+                        <p class="footerTitle">We are avail for</p>
+                        <p>Birthday party order <br>
+                            Beverages hampers <br>
+                            Event vendors <br>
+                            Holiday hampers</p>
+                    </div>
+                </div>
+                <div class="col-3 pl-5">
+                    <p class="footerTitle">Find us at</p>
+                    <div class="row">
+                        <div class="col-1">
+                            <img class="iconFooter" src="asset/instagram.png"> <br>
+                            <img class="iconFooter" src="asset/gojek.png"> <br>
+                            <img class="iconFooter" src="asset/shopeefood.png">
+                        </div>
+                        <div class="col-2">
+                            <a href="https://www.instagram.com/douxbutter/?hl=en" class="textLink">Instagram</a>
+                            <a href="https://gofood.co.id/en/surabaya/restaurant/doux-butter-raya-mulyosari-1ad1081c-ea59-489c-a188-b73ccdbf57c6" class="textLink">gofood</a>
+                            <a href="https://shopee.co.id/universal-link/now-food/shop/21189316?deep_and_deferred=1&shareChannel=copy_link" class="textLink">Shopeefood</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

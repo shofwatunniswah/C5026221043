@@ -1,0 +1,216 @@
+*{
+    margin: 0px;
+    @import url(https://fonts.googleapis.com/css2?family=Inter);
+    font-family: "Inter";
+    font-style: normal;
+    font-display: swap;
+}
+
+body{
+    background-image: url(assetLinkTree/background.png);
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.shofie-container{
+    width: 100vw;
+    height: 100vh;
+}
+.shofie-topbar{
+    display: grid;
+    max-width: calc(762.4px);
+    height: 52px;
+    grid-template-columns: 1fr auto 1fr;
+    border: 1px solid transparent;
+    border-radius: 72px;
+    background-color: transparent;
+    padding-right: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    width: 100%;
+    margin: 8px auto;
+    padding: 8px 12px;
+}
+
+.shofie-roundbutton{
+    border-radius: 50%;
+    width:40px;
+    height:40px;
+    background-color: rgb(235,235,235);
+    cursor: pointer;
+    margin-top: 5.5px;
+}
+.shofie-roundbutton>img{
+    display: block;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25%;
+}
+.shofie-profpictopbar{
+    grid-column-start: 2;
+    grid-row-start: 1;
+    opacity: 0;
+    width: 44px;
+    height: 44px;
+    margin-top: 5px ;
+}
+.shofie-subscribebutton{
+    grid-column-start: 4;
+    grid-row-start: 1;
+    display: grid;
+    border-radius: 62px;
+    background-color: rgb(235,235,235);
+    cursor: pointer;
+    width: 130.13px;
+    height:40px;
+    margin-top: 6px;
+}
+.shofie-subscribebutton>img{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+.shofie-textbox{
+    grid-column-start: 2;
+    grid-row-start: 1;
+    background-color: transparent;
+    margin: 0px;
+    width: 68.9px;
+    height: 21px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.shofie-profpic{
+    border-radius: 50%;
+    width: 96px;
+    height: 96px;
+    display: block;
+    object-fit: contain;
+    object-position: initial;
+    margin: auto;
+    display: block;
+    margin-top: -20px;
+}
+.shofie-heading{
+    margin-top: 16px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    color: rgb(255,255,255);
+    text-align: center;
+    margin-bottom: 8px;
+}
+.shofie-buttonholder{
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 680px;
+    display: block;
+}
+.shofie-boxlink{
+    width: 680px;
+    height: 59.2px;
+    background-color: rgb(255,255,255);
+    border-radius: 30px;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: 2px solid rgb(255, 255, 255);
+    cursor: pointer;
+    display: grid;
+}
+.shofie-icon{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    width: 32px;
+    height: 32px;
+    margin-left: 8px;
+    margin-top: 13px;
+    margin-bottom: 14px;
+    border-radius: 50%;
+}
+.shofie-text{
+    text-decoration: none;
+    grid-row-start: 1;
+    grid-column-start: 2;
+    font-family: "Inter";
+    color: rgb(28,32,93);
+    margin-top: 20px;
+    margin-left: -35px;
+}
+.shofie-buttonholder a{
+    text-decoration: none;
+}
+.shofie-footer{
+    display:grid;
+    grid-template-columns: 1fr auto 1fr;
+    margin-top:24px;
+    width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+.shofie-instagram{
+    grid-row-start: 1;
+    grid-column-start: 1;
+    width: 29px;
+    height: 29px;
+    margin-left: 298px;
+}
+.shofie-email{
+    grid-row-start: 1;
+    grid-column-start: 2;
+    width:32px;
+    height: 32px;
+    margin-left: 10px;
+}
+.shofie-ltrlogo{
+    grid-row-start: 1;
+    grid-column-start: 1;
+    margin-top: -20px;
+    width:87px;
+    height: 48px;
+    margin-left: 240px;
+}
+.shofie-x{
+    grid-row-start: 2;
+    grid-column-start: 2;
+    width:16px;
+    height: 16px;
+    margin-left: 334px;
+    margin-top: -29px;
+}
+.shofie-collab{
+    grid-row-start: 3;
+    grid-column-start: 3;
+    width: 82.5px;
+    height: 42px;
+    margin-left: 355px;
+    margin-top: -43px;
+}
+.shofie-boxlink:hover{
+    transform: scale(1.02);
+}
+.shofie-instagram:hover{
+    transform: scale(1.1);
+}
+.shofie-email:hover{
+    transform: scale(1.1);
+}
