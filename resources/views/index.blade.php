@@ -1,41 +1,47 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Tutorial Membuat CRUD Pada Laravel - www.malasngoding.com</title>
-</head>
-<body>
+    @extends('master')
 
-	<h2>www.malasngoding.com</h2>
-	<h3>Data Pegawai</h3>
+    @section('title', 'Data Pegawai')
 
-	<a href="/pegawai/tambah"> + Tambah Pegawai Baru</a>
+    @section('konten')
 
-	<br/>
-	<br/>
+        <h3>Data Pegawai</h3>
 
-	<table border="1">
-		<tr>
-			<th>Nama</th>
-			<th>Jabatan</th>
-			<th>Umur</th>
-			<th>Alamat</th>
-			<th>Opsi</th>
-		</tr>
-		@foreach($pegawai as $p)
-		<tr>
-			<td>{{ $p->pegawai_nama }}</td>
-			<td>{{ $p->pegawai_jabatan }}</td>
-			<td>{{ $p->pegawai_umur }}</td>
-			<td>{{ $p->pegawai_alamat }}</td>
-			<td>
-				<a href="/pegawai/edit/{{ $p->pegawai_id }}">Edit</a>
-				|
-				<a href="/pegawai/hapus/{{ $p->pegawai_id }}">Hapus</a>
-			</td>
-		</tr>
-		@endforeach
-	</table>
+        <a href="/pegawai/tambah" class="btn btn-primary"> + Tambah Pegawai Baru</a>
+
+        <br />
+        <p>Cari Data Pegawai Berdasarkan Nama :</p>
+        <form action="/pegawai/cari" method="GET">
+            <input class="form-control" type="text" name="cari" placeholder="Cari Pegawai .."
+                value="{{ old('cari', isset($cari) ? $cari : '') }}">
+            <input class="btn btn-primary" type="submit" value="CARI">
+        </form>
+        <br />
+        <br />
+        <br />
 
 
-</body>
-</html>
+        <table class="table table-striped table-hover">
+            <tr>
+                <th>Nama</th>
+                <th>Jabatan</th>
+                <th>Umur</th>
+                <th>Alamat</th>
+                <th>Opsi</th>
+            </tr>
+            @foreach ($pegawai as $p)
+                <tr>
+                    <td>{{ $p->pegawai_nama }}</td>
+                    <td>{{ $p->pegawai_jabatan }}</td>
+                    <td>{{ $p->pegawai_umur }}</td>
+                    <td>{{ $p->pegawai_alamat }}</td>
+                    <td>
+                        <a href="/pegawai/edit/{{ $p->pegawai_id }}" class="btn btn-warning">Edit</a>
+                        |
+                        <a href="/pegawai/hapus/{{ $p->pegawai_id }}" class="btn btn-danger">Hapus</a>
+                    </td>
+                </tr>
+            @endforeach
+        </table>
+
+        {{ $pegawai->links() }}
+    @endsection
