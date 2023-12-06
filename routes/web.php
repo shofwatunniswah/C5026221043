@@ -51,6 +51,7 @@ Route::get('/blog/kontak', function () {
 //route CRUD
 Route::get('/pegawai','App\Http\Controllers\PegawaiController@index');
 Route::get('/pegawai/tambah','App\Http\Controllers\PegawaiController@tambah');
+Route::get('/pegawai/view/{id}','App\Http\Controllers\PegawaiController@view');
 Route::post('/pegawai/store','App\Http\Controllers\PegawaiController@store');
 Route::get('/pegawai/edit/{id}','App\Http\Controllers\PegawaiController@edit');
 Route::post('/pegawai/update','App\Http\Controllers\PegawaiController@update');
