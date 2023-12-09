@@ -64,3 +64,17 @@ Route::get('/keranjangbelanja','App\Http\Controllers\BelanjaController@shop');
 Route::get('/keranjangbelanja/batal/{ID}','App\Http\Controllers\BelanjaController@batal');
 Route::get('/keranjangbelanja/beli','App\Http\Controllers\BelanjaController@beli');
 Route::post('/keranjangbelanja/store','App\Http\Controllers\BelanjaController@store');
+
+Route::get('/pensil','App\Http\Controllers\PensilController@listPensil');
+Route::get('/pensil/tambah','App\Http\Controllers\PensilController@tambah');
+Route::post('/pensil/store','App\Http\Controllers\PensilController@store');
+Route::get('/pensil/hapus/{kode}','App\Http\Controllers\PensilController@hapus');
+Route::get('/pensil/view/{kode}','App\Http\Controllers\PensilController@view');
+Route::get('/pensil/cari','App\Http\Controllers\PensilController@cari');
+Route::get('/pensil/edit/{kode}','App\Http\Controllers\PensilController@edit');
+Route::post('/pensil/update/{kode}','App\Http\Controllers\PensilController@update');
+
+//route CRUD nilaikuliah
+Route::get('/nilaikuliah','App\Http\Controllers\NilaiController@index');
+Route::get('/nilaikuliah/tambahData','App\Http\Controllers\NilaiController@tambah');
+Route::post('/nilaikuliah/store','App\Http\Controllers\NilaiController@store');

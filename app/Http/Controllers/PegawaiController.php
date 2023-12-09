@@ -77,7 +77,7 @@ class PegawaiController extends Controller
             'image' => 'image|mimes:jpeg,png,jpg,gif|',
         ]);
 
-        DB::table('pegawai')->insert([
+        DB::table('pegawai')->where('pegawai_id', $id)->update([
             'pegawai_nama' => $request->nama,
             'pegawai_jabatan' => $request->jabatan,
             'pegawai_umur' => $request->umur,
