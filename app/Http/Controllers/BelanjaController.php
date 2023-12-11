@@ -61,29 +61,29 @@ class BelanjaController extends Controller
 
 	// }
 
-	// update data pegawai
-	// public function update(Request $request)
-	// {
-	// 	// update data pegawai
-	// 	$request->validate([
-    //         'nama' => 'required|string',
-    //         'jabatan' => 'required|string',
-    //         'umur' => 'required|integer',
-    //         'alamat' => 'required|string',
-    //         'image' => 'image|mimes:jpeg,png,jpg,gif|',
-    //     ]);
+	//update data pegawai
+	public function update(Request $request)
+	{
+		// update data pegawai
+		$request->validate([
+            'nama' => 'required|string',
+            'jabatan' => 'required|string',
+            'umur' => 'required|integer',
+            'alamat' => 'required|string',
+            'image' => 'image|mimes:jpeg,png,jpg,gif|',
+        ]);
 
-    //     DB::table('pegawai')->insert([
-    //         'pegawai_nama' => $request->nama,
-    //         'pegawai_jabatan' => $request->jabatan,
-    //         'pegawai_umur' => $request->umur,
-    //         'pegawai_alamat' => $request->alamat,
-    //         'pegawai_foto' => $request->file('image')->store('pegawai_foto') // Use the stored filename here
-    //     ]);
+        DB::table('pegawai')->insert([
+            'pegawai_nama' => $request->nama,
+            'pegawai_jabatan' => $request->jabatan,
+            'pegawai_umur' => $request->umur,
+            'pegawai_alamat' => $request->alamat,
+            'pegawai_foto' => $request->file('image')->store('pegawai_foto') // Use the stored filename here
+        ]);
 
-    //     // Redirect to the '/pegawai' route after successfully storing data
-    //     return redirect('/pegawai');
-	// }
+        // Redirect to the '/pegawai' route after successfully storing data
+        return redirect('/pegawai');
+	}
 
 	// method untuk hapus data pegawai
 	public function batal($ID)
